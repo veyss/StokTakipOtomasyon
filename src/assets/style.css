@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;  
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background: #fff;
+    color: #333;
+    line-height: 1.6;
+ 
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    color: #333;
+    text-decoration: none;
+}
+
+h1, h2 {
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+
+img {
+    width: 100%;
+}
+
+
+/* Navbar Start*/
+.navbar {
+    display: flex;   
+    align-items: center;      
+    justify-content: space-between;
+    background-color: #333;
+    color: #fff;
+    opacity: 0.8;
+    width: 100%;
+    height: 70px;
+    top: 0px;
+    padding: auto 30px;    
+}
+.navbar a {
+    color: #28a745;
+    padding: 10px ;
+    margin: 0 3px;
+}
+
+.navbar a:hover,.active {
+    border-bottom: #28a745 2px solid;
+}
+
+.navbar ul {
+    display: flex;   
+   
+}
+
+.navbar .logo {
+    font-weight: 400;
+}
+.navbar .logOut{
+    margin-left: 3vw;
+    border: 1px solid gray;
+    border-radius: 5px;
+}
+/* Navbar end*/
+
+/* form login start*/
+.form-container{   
+    min-height: 90vh;
+    display: flex;
+    flex-direction: nowrap;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 0 5vw;
+ 
+}
+.login-form{  
+    padding: 5%;
+    box-shadow: 5px 5px 7px 7px green;
+
+}
+.login-form h3{
+    color: #333;
+    margin: 10vh 0;
+    font-weight: 700;
+    text-align: center;
+}
+.login-form .ForgetPwd{
+    color: #0062cc;
+    font-weight: 600;
+    text-decoration: none;
+}
+.register_border{
+    box-shadow: 5px 5px 8px 8px gray;
+}
+
+/* form login end*/
+
+/* Mobile */
+@media(max-width: 870px) {
+    .navbar {
+       flex-direction: column;
+        height: auto;
+        padding: 1,2rem;
+    }
+
+    .navbar a {
+        padding: 10px 10px;
+        margin: 0 3px;
+    }
+    .navbar ul {
+        flex-direction: column;        
+    }
+   .navbar .logOut{
+    margin-left: 0;
+    
+}
+   
+    .login-form{
+        margin: 0 5px;       
+    }
+
+}
